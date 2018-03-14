@@ -1,1 +1,3 @@
-TP Web : Javascript et HTML5
+DESPIERRE Corentin, JOUVANCE Antoine
+
+Pour executer le projet il faut lancer 'cancas.html' dans un navigateur Internet.

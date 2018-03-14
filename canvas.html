@@ -2,44 +2,43 @@
 
 <html>
 <head>
-	<title>A simple canvas</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="canvas.css" rel="stylesheet" type="text/css">
+    <title>A simple canvas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="canvas.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 <div class="container">
-	<div class="row">
-		<form>
+    <div class="row">
+        <form>
+            <div class="mx-button">
+                <input type="radio" name="mx" id="buttonRect" checked>
+                <label for="buttonRect" unselectable>Rectangle</label>
+            </div>
+            <div class="mx-button">
+                <input type="radio" name="mx" id="buttonLine" checked>
+                <label for="buttonLine" unselectable>Line</label>
+            </div>
+        </form>
+        <input id="spinnerWidth" type="number" min="1" max="50" step="1" value="5" size="4">
+        <input id="colour" type="color">
 
-			<div class="mx-button">
-				<input type="radio" name="mx" id="buttonRect" checked>
-				<label for="buttonRect" unselectable>Rectangle</label>
-			</div>
-			<div class="mx-button">
-				<input type="radio" name="mx" id="buttonLine" checked>
-				<label for="buttonLine" unselectable>Line</label>
-			</div>
-		</form>
-		<input id="spinnerWidth" type="number" min="1" max="50" step="1" value="5" size="4">
-		<input id="colour" type="color">
 
+    </div>
 
-	</div>
+    <br/>
 
-	<br/>
+    <div class="row">
+        <div class="col-md-8" id="canvasDiv">
+            <canvas class="myCanvas" id="myCanvas"></canvas>
+        </div>
 
-	<div class="row">
-		<div class="col-md-8" id="canvasDiv">
-			<canvas class="myCanvas" id="myCanvas"></canvas>
-		</div>
-
-		<div class="col-md-4">
-			<ul class="list-unstyled" id="shapeList">
-			</ul>
-		</div>
-	</div>
+        <div class="col-md-4">
+            <ul class="list-unstyled" id="shapeList">
+            </ul>
+        </div>
+    </div>
 
 </div>
 
